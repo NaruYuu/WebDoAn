@@ -50,13 +50,17 @@ export default function SiteHeader({
       </div>
 
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="Phòng Mạch - Trang chủ">
+        <Link
+          className="brand"
+          href="/"
+          aria-label="Phòng Mạch Store - Trang chủ"
+        >
           <span className="brand-mark" aria-hidden="true">
             <span />
             <span />
             <span />
           </span>
-          <span>phòng mạch</span>
+          <span>Phòng Mạch Store</span>
         </Link>
 
         <button
@@ -82,7 +86,7 @@ export default function SiteHeader({
             aria-current={pathname === "/about" ? "page" : undefined}
             onClick={() => setMobileMenuOpen(false)}
           >
-            Về Phòng Mạch
+            Về Phòng Mạch Store
           </Link>
           <Link
             href="/about#support"

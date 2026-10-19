@@ -226,8 +226,8 @@ export default function CheckoutForm({ products }: CheckoutFormProps) {
             <span className="payment-selected">Đã chọn</span>
           </div>
           <p className="payment-disclaimer">
-            Thanh toán trực tuyến chưa được tích hợp. Phòng Mạch sẽ liên hệ xác
-            nhận đơn trước khi giao.
+            Thanh toán trực tuyến chưa được tích hợp. Phòng Mạch Store sẽ liên
+            hệ xác nhận đơn trước khi giao.
           </p>
 
           {orderError && (

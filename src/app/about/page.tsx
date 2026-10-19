@@ -3,9 +3,9 @@ import Link from "next/link";
 import SiteHeader from "@/app/site-header";
 
 export const metadata = {
-  title: "Về Phòng Mạch — Chọn đúng đồ, dùng lâu",
+  title: "Về Phòng Mạch Store — Chọn đúng đồ, dùng lâu",
   description:
-    "Tìm hiểu cách Phòng Mạch chọn thiết bị, hỗ trợ bảo hành và đồng hành cùng khách hàng.",
+    "Tìm hiểu cách Phòng Mạch Store chọn thiết bị, hỗ trợ bảo hành và đồng hành cùng khách hàng.",
 };
 
 export default function AboutPage() {
@@ -14,15 +14,15 @@ export default function AboutPage() {
       <SiteHeader />
       <section className="about-hero">
         <div className="about-copy">
-          <p className="section-kicker">Về Phòng Mạch</p>
+          <p className="section-kicker">Về Phòng Mạch Store</p>
           <h1>
             Ít món hơn.
             <br />
             <span>Dùng hợp hơn.</span>
           </h1>
           <p>
-            Phòng Mạch bắt đầu từ một câu hỏi giản dị: món đồ công nghệ nào
-            thực sự làm một ngày của bạn dễ chịu hơn?
+            Phòng Mạch Store bắt đầu từ một câu hỏi giản dị: món đồ công nghệ
+            nào thực sự làm một ngày của bạn dễ chịu hơn?
           </p>
           <Link className="about-primary-link" href="/products">
             Xem đồ được chọn lọc <ArrowRight size={17} />
@@ -81,8 +81,8 @@ export default function AboutPage() {
           <p className="section-kicker">Hỗ trợ khách hàng</p>
           <h2>Cần một lời gợi ý?</h2>
           <p>
-            Gửi câu hỏi về sản phẩm, đơn hàng hoặc bảo hành. Phòng Mạch sẽ phản
-            hồi qua email.
+            Gửi câu hỏi về sản phẩm, đơn hàng hoặc bảo hành. Phòng Mạch Store
+            sẽ phản hồi qua email.
           </p>
         </div>
         <a className="support-email" href="mailto:xinchao@phongmach.vn">
@@ -97,12 +97,12 @@ export default function AboutPage() {
             <span />
             <span />
           </span>
-          <span>phòng mạch</span>
+          <span>Phòng Mạch Store</span>
         </Link>
         <p>Chọn đúng đồ, ngày tự nhiên nhẹ.</p>
         <div className="footer-contact">
           <a href="mailto:xinchao@phongmach.vn">xinchao@phongmach.vn</a>
-          <span>© 2026 Phòng Mạch</span>
+          <span>© 2026 Phòng Mạch Store</span>
         </div>
       </footer>
     </main>

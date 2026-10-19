@@ -8,7 +8,7 @@ import { notFound } from "next/navigation";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Xác nhận đơn hàng — Phòng Mạch",
+  title: "Xác nhận đơn hàng — Phòng Mạch Store",
   description: "Thông tin và trạng thái đơn hàng của bạn.",
 };
 
@@ -38,8 +38,8 @@ export default async function OrderConfirmationPage({
           <p className="section-kicker">Đã ghi nhận đơn hàng</p>
           <h1>Cảm ơn {order.customerName}.</h1>
           <p className="confirmation-intro">
-            Đơn hàng đã được lưu thành công. Phòng Mạch sẽ liên hệ với bạn để
-            xác nhận trước khi giao.
+            Đơn hàng đã được lưu thành công. Phòng Mạch Store sẽ liên hệ với
+            bạn để xác nhận trước khi giao.
           </p>
 
           <div className="confirmation-reference">
@@ -109,7 +109,7 @@ export default async function OrderConfirmationPage({
             <span />
             <span />
           </span>
-          <span>phòng mạch</span>
+          <span>Phòng Mạch Store</span>
         </Link>
         <p>Cần hỗ trợ? Chúng tôi luôn sẵn sàng.</p>
         <div className="footer-contact">

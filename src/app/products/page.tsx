@@ -4,9 +4,9 @@ import { prisma } from "@/lib/prisma";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Sản phẩm — Phòng Mạch",
+  title: "Sản phẩm — Phòng Mạch Store",
   description:
-    "Tìm và lọc các thiết bị công nghệ được Phòng Mạch chọn lọc cho mỗi ngày.",
+    "Tìm và lọc các thiết bị công nghệ được Phòng Mạch Store chọn lọc cho mỗi ngày.",
 };
 
 export default async function ProductsPage() {

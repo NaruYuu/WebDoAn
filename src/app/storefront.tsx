@@ -191,7 +191,7 @@ export default function Storefront({
         </div>
       </section>
 
-      <section className="benefits" aria-label="Cam kết của Phòng Mạch">
+      <section className="benefits" aria-label="Cam kết của Phòng Mạch Store">
         <div>
           <span className="benefit-number">01</span>
           <p>
@@ -221,7 +221,9 @@ export default function Storefront({
         <div className="catalog-heading">
           <div>
             <p className="section-kicker">
-              {isProductsPage ? "Cửa hàng Phòng Mạch" : "Bộ sưu tập hiện tại"}
+              {isProductsPage
+                ? "Cửa hàng Phòng Mạch Store"
+                : "Bộ sưu tập hiện tại"}
             </p>
             <h2>
               {isProductsPage ? "Tìm món đồ của bạn." : "Đồ tốt cho mỗi ngày."}
@@ -339,12 +341,12 @@ export default function Storefront({
             <span />
             <span />
           </span>
-          <span>phòng mạch</span>
+          <span>Phòng Mạch Store</span>
         </Link>
         <p>Chọn đúng đồ, ngày tự nhiên nhẹ.</p>
         <div className="footer-contact">
           <a href="mailto:xinchao@phongmach.vn">xinchao@phongmach.vn</a>
-          <span>© 2026 Phòng Mạch</span>
+          <span>© 2026 Phòng Mạch Store</span>
         </div>
       </footer>
 
@@ -364,7 +366,7 @@ export default function Storefront({
           >
             <div className="drawer-header">
               <div>
-                <p className="section-kicker">Phòng Mạch</p>
+                <p className="section-kicker">Phòng Mạch Store</p>
                 <h2 id="drawer-title">Giỏ hàng</h2>
               </div>
               <button

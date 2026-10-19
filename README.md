@@ -1,4 +1,4 @@
-# Phòng Mạch
+# Phòng Mạch Store
 
 Cửa hàng thiết bị công nghệ viết bằng Next.js, TypeScript, Prisma và SQLite.
 Danh mục sản phẩm được đọc từ cơ sở dữ liệu; khách có thể tìm kiếm, lọc sản
@@ -27,7 +27,3 @@ lý dữ liệu bằng `npm run db:studio`.
 - `Product`: sản phẩm, giá, danh mục và số lượng còn lại.
 - `Order`: thông tin người nhận, tổng tiền và trạng thái đơn.
 - `OrderItem`: ảnh chụp tên/giá/số lượng ở thời điểm đặt hàng.
-
-Ảnh mẫu tải từ Unsplash và cần kết nối Internet để hiển thị. Thông tin đơn hàng
-được lưu local trong SQLite. Luồng đặt hàng hiện hỗ trợ thanh toán khi nhận
-hàng (COD); chưa kết nối cổng thanh toán trực tuyến.
