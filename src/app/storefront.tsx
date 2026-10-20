@@ -55,9 +55,13 @@ export default function Storefront({
   const isProductsPage = view === "products";
 
   useEffect(() => {
-    setCart(parseCart(window.localStorage.getItem(CART_STORAGE_KEY)));
+    setCart(
+      parseCart(window.localStorage.getItem(CART_STORAGE_KEY)).filter((line) =>
+        products.some((product) => product.id === line.productId),
+      ),
+    );
     setCartReady(true);
-  }, []);
+  }, [products]);
 
   useEffect(() => {
     if (!cartReady) return;

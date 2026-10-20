@@ -8,13 +8,22 @@ phẩm, thêm vào giỏ và đặt hàng. Đơn hàng được lưu cùng giá 
 
 ## Chạy dự án trên Windows
 
-Yêu cầu Node.js 20.9 trở lên và npm.
+Chạy PowerShell tại thư mục dự án:
 
 ```powershell
-cd C:\Users\NaruYuu\Projects\WebDoAn
-npm install
-npm run db:push
-npm run db:seed
+winget install --id OpenJS.NodeJS.LTS --exact
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+./install.ps1
+```
+
+Script tự cài Node.js LTS bằng `winget` nếu chưa có Node.js 20.9+, cài thư viện
+từ `package-lock.json`, tạo `.env` nếu chưa có, rồi khởi tạo SQLite và dữ liệu
+mẫu. Nếu Node.js vừa được cài nhưng chưa nhận trong phiên PowerShell hiện tại,
+đóng/mở PowerShell rồi chạy lại script.
+
+Khởi động website sau khi cài đặt:
+
+```powershell
 npm run dev
 ```
 
